@@ -1,0 +1,349 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Mar 27 09:12:57 CET 2015</td>
+</tr>
+<tr><td>Total time:</td><td>47 seconds (47554 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ubs.fatca.SampleJUnitTest.testHomePageHasAHeader()'><b>testHomePageHasAHeader</b><br>Test class: com.ubs.fatca.SampleJUnitTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(/Applications/Firefox.app/Contents/MacOS/firefox-bin) on port 7055; process output follows: 
+h changes to installed add-ons
+1427443978340	addons.xpi-utils	DEBUG	Updating add-on states
+1427443978340	addons.xpi-utils	DEBUG	Writing add-ons list
+1427443978344	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1427443978345	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1427443978346	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1427443978347	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1427443978875	DeferredSave.extensions.json	DEBUG	Starting timer
+1427443978913	DeferredSave.extensions.json	DEBUG	Starting write
+1427443978922	addons.manager	DEBUG	shutdown
+1427443978923	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1427443978923	addons.xpi	DEBUG	shutdown
+1427443978923	addons.xpi-utils	DEBUG	shutdown
+1427443978924	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1427443978924	addons.manager	DEBUG	Calling shutdown blocker for OpenH264Provider
+1427443978925	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1427443979285	DeferredSave.extensions.json	DEBUG	Write succeeded
+1427443979285	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1427443979285	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1427443979289	addons.manager	DEBUG	Async provider shutdown done
+1427443979801	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1427443979804	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1427443979808	addons.xpi	DEBUG	startup
+1427443979808	addons.xpi	INFO	Mapping fxdriver@googlecode.com to /var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com
+1427443979809	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: /var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/webdriver-staging
+1427443979809	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to /Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427443979810	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1427443979810	addons.xpi	DEBUG	checkForChanges
+1427443979811	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.41.0&quot;,&quot;st&quot;:1427443977000,&quot;mt&quot;:1427443977000}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426914971000,&quot;mt&quot;:1426912941000}}}
+1427443979812	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427443979813	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.41.0&quot;,&quot;st&quot;:1427443977000,&quot;mt&quot;:1427443977000}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426914971000,&quot;mt&quot;:1426912941000}}}
+1427443979814	addons.xpi	DEBUG	No changes found
+1427443979818	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1427443979819	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1427443979821	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1427443979821	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1427443980955	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a6c4449dc285928ba024779344f5423c58&apos;, time: &apos;2014-03-27 11:29:39&apos;
+System info: host: &apos;Saeidrezas-MacBook-Pro.local&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.7.0_80-ea&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at ru.stqa.selenium.factory.WebDriverFactoryInternal.createLocalDriver(WebDriverFactoryInternal.java:74)
+	at ru.stqa.selenium.factory.WebDriverFactoryInternal.newDriver(WebDriverFactoryInternal.java:58)
+	at ru.stqa.selenium.factory.SingletonStorage.createNewDriver(SingletonStorage.java:73)
+	at ru.stqa.selenium.factory.SingletonStorage.getDriver(SingletonStorage.java:31)
+	at ru.stqa.selenium.factory.WebDriverFactoryInternal.getDriver(WebDriverFactoryInternal.java:49)
+	at ru.stqa.selenium.factory.WebDriverFactory.getDriver(WebDriverFactory.java:39)
+	at com.ubs.fatca.JUnitTestBase$2.before(JUnitTestBase.java:39)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+h changes to installed add-ons
+1427443978340	addons.xpi-utils	DEBUG	Updating add-on states
+1427443978340	addons.xpi-utils	DEBUG	Writing add-ons list
+1427443978344	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1427443978345	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1427443978346	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1427443978347	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1427443978875	DeferredSave.extensions.json	DEBUG	Starting timer
+1427443978913	DeferredSave.extensions.json	DEBUG	Starting write
+1427443978922	addons.manager	DEBUG	shutdown
+1427443978923	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1427443978923	addons.xpi	DEBUG	shutdown
+1427443978923	addons.xpi-utils	DEBUG	shutdown
+1427443978924	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1427443978924	addons.manager	DEBUG	Calling shutdown blocker for OpenH264Provider
+1427443978925	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1427443979285	DeferredSave.extensions.json	DEBUG	Write succeeded
+1427443979285	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1427443979285	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1427443979289	addons.manager	DEBUG	Async provider shutdown done
+1427443979801	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1427443979804	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1427443979808	addons.xpi	DEBUG	startup
+1427443979808	addons.xpi	INFO	Mapping fxdriver@googlecode.com to /var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com
+1427443979809	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: /var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/webdriver-staging
+1427443979809	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to /Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427443979810	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1427443979810	addons.xpi	DEBUG	checkForChanges
+1427443979811	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.41.0&quot;,&quot;st&quot;:1427443977000,&quot;mt&quot;:1427443977000}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426914971000,&quot;mt&quot;:1426912941000}}}
+1427443979812	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427443979813	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.41.0&quot;,&quot;st&quot;:1427443977000,&quot;mt&quot;:1427443977000}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426914971000,&quot;mt&quot;:1426912941000}}}
+1427443979814	addons.xpi	DEBUG	No changes found
+1427443979818	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1427443979819	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1427443979821	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1427443979821	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1427443980955	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 57 more
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace334169368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace334169368'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(/Applications/Firefox.app/Contents/MacOS/firefox-bin) on port 7055; process output follows: 
+h changes to installed add-ons
+1427443978340	addons.xpi-utils	DEBUG	Updating add-on states
+1427443978340	addons.xpi-utils	DEBUG	Writing add-ons list
+1427443978344	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1427443978345	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1427443978346	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1427443978347	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1427443978875	DeferredSave.extensions.json	DEBUG	Starting timer
+1427443978913	DeferredSave.extensions.json	DEBUG	Starting write
+1427443978922	addons.manager	DEBUG	shutdown
+1427443978923	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1427443978923	addons.xpi	DEBUG	shutdown
+1427443978923	addons.xpi-utils	DEBUG	shutdown
+1427443978924	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1427443978924	addons.manager	DEBUG	Calling shutdown blocker for OpenH264Provider
+1427443978925	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1427443979285	DeferredSave.extensions.json	DEBUG	Write succeeded
+1427443979285	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1427443979285	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1427443979289	addons.manager	DEBUG	Async provider shutdown done
+1427443979801	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1427443979804	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1427443979808	addons.xpi	DEBUG	startup
+1427443979808	addons.xpi	INFO	Mapping fxdriver@googlecode.com to /var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com
+1427443979809	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: /var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/webdriver-staging
+1427443979809	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to /Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427443979810	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1427443979810	addons.xpi	DEBUG	checkForChanges
+1427443979811	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.41.0&quot;,&quot;st&quot;:1427443977000,&quot;mt&quot;:1427443977000}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426914971000,&quot;mt&quot;:1426912941000}}}
+1427443979812	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427443979813	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.41.0&quot;,&quot;st&quot;:1427443977000,&quot;mt&quot;:1427443977000}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426914971000,&quot;mt&quot;:1426912941000}}}
+1427443979814	addons.xpi	DEBUG	No changes found
+1427443979818	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1427443979819	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1427443979821	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1427443979821	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1427443980955	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a6c4449dc285928ba024779344f5423c58&apos;, time: &apos;2014-03-27 11:29:39&apos;
+System info: host: &apos;Saeidrezas-MacBook-Pro.local&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.7.0_80-ea&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at ru.stqa.selenium.factory.WebDriverFactoryInternal.createLocalDriver(WebDriverFactoryInternal.java:74)
+	at ru.stqa.selenium.factory.WebDriverFactoryInternal.newDriver(WebDriverFactoryInternal.java:58)
+	at ru.stqa.selenium.factory.SingletonStorage.createNewDriver(SingletonStorage.java:73)
+	at ru.stqa.selenium.factory.SingletonStorage.getDriver(SingletonStorage.java:31)
+	at ru.stqa.selenium.factory.WebDriverFactoryInternal.getDriver(WebDriverFactoryInternal.java:49)
+	at ru.stqa.selenium.factory.WebDriverFactory.getDriver(WebDriverFactory.java:39)
+	at com.ubs.fatca.JUnitTestBase$2.before(JUnitTestBase.java:39)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:81)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:69)
+	at org.testng.TestRunner$1.run(TestRunner.java:682)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1005)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:713)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:128)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:112)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+h changes to installed add-ons
+1427443978340	addons.xpi-utils	DEBUG	Updating add-on states
+1427443978340	addons.xpi-utils	DEBUG	Writing add-ons list
+1427443978344	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1427443978345	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1427443978346	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1427443978347	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1427443978875	DeferredSave.extensions.json	DEBUG	Starting timer
+1427443978913	DeferredSave.extensions.json	DEBUG	Starting write
+1427443978922	addons.manager	DEBUG	shutdown
+1427443978923	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1427443978923	addons.xpi	DEBUG	shutdown
+1427443978923	addons.xpi-utils	DEBUG	shutdown
+1427443978924	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1427443978924	addons.manager	DEBUG	Calling shutdown blocker for OpenH264Provider
+1427443978925	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1427443979285	DeferredSave.extensions.json	DEBUG	Write succeeded
+1427443979285	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1427443979285	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1427443979289	addons.manager	DEBUG	Async provider shutdown done
+1427443979801	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1427443979804	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1427443979808	addons.xpi	DEBUG	startup
+1427443979808	addons.xpi	INFO	Mapping fxdriver@googlecode.com to /var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com
+1427443979809	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: /var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/webdriver-staging
+1427443979809	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to /Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427443979810	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1427443979810	addons.xpi	DEBUG	checkForChanges
+1427443979811	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.41.0&quot;,&quot;st&quot;:1427443977000,&quot;mt&quot;:1427443977000}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426914971000,&quot;mt&quot;:1426912941000}}}
+1427443979812	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427443979813	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.41.0&quot;,&quot;st&quot;:1427443977000,&quot;mt&quot;:1427443977000}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426914971000,&quot;mt&quot;:1426912941000}}}
+1427443979814	addons.xpi	DEBUG	No changes found
+1427443979818	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1427443979819	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1427443979821	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1427443979821	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1427443980955	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 57 more
+</pre></div></td>
+<td>47</td>
+<td>testHomePageHasAHeader(com.ubs.fatca.SampleJUnitTest)</td></tr>
+</table><p>
+</body>
+</html>

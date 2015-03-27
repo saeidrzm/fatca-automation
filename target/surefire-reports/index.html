@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Surefire_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Surefire_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Surefire_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Surefire_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Surefire_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Surefire_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Surefire_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.ubs.fatca.SampleJUnitTest" hash-for-method="testHomePageHasAHeader">testHomePageHasAHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ubs.fatca.SampleJUnitTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHomePageHasAHeader">
+                  </a> <!-- testHomePageHasAHeader -->
+                  <span class="method-name">testHomePageHasAHeader</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(/Applications/Firefox.app/Contents/MacOS/firefox-bin) on port 7055; process output follows: 
+h changes to installed add-ons
+1427443978340	addons.xpi-utils	DEBUG	Updating add-on states
+1427443978340	addons.xpi-utils	DEBUG	Writing add-ons list
+1427443978344	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1427443978345	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1427443978346	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1427443978347	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1427443978875	DeferredSave.extensions.json	DEBUG	Starting timer
+1427443978913	DeferredSave.extensions.json	DEBUG	Starting write
+1427443978922	addons.manager	DEBUG	shutdown
+1427443978923	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1427443978923	addons.xpi	DEBUG	shutdown
+1427443978923	addons.xpi-utils	DEBUG	shutdown
+1427443978924	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1427443978924	addons.manager	DEBUG	Calling shutdown blocker for OpenH264Provider
+1427443978925	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1427443979285	DeferredSave.extensions.json	DEBUG	Write succeeded
+1427443979285	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1427443979285	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1427443979289	addons.manager	DEBUG	Async provider shutdown done
+1427443979801	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1427443979804	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1427443979808	addons.xpi	DEBUG	startup
+1427443979808	addons.xpi	INFO	Mapping fxdriver@googlecode.com to /var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com
+1427443979809	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: /var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/webdriver-staging
+1427443979809	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to /Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427443979810	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1427443979810	addons.xpi	DEBUG	checkForChanges
+1427443979811	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.41.0&quot;,&quot;st&quot;:1427443977000,&quot;mt&quot;:1427443977000}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426914971000,&quot;mt&quot;:1426912941000}}}
+1427443979812	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427443979813	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.41.0&quot;,&quot;st&quot;:1427443977000,&quot;mt&quot;:1427443977000}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426914971000,&quot;mt&quot;:1426912941000}}}
+1427443979814	addons.xpi	DEBUG	No changes found
+1427443979818	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1427443979819	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1427443979821	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1427443979821	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1427443980955	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a6c4449dc285928ba024779344f5423c58&apos;, time: &apos;2014-03-27 11:29:39&apos;
+System info: host: &apos;Saeidrezas-MacBook-Pro.local&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.1&apos;, java.version: &apos;1.7.0_80-ea&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at ru.stqa.selenium.factory.WebDriverFactoryInternal.createLocalDriver(WebDriverFactoryInternal.java:74)
+	at ru.stqa.selenium.factory.WebDriverFactoryInternal.newDriver(WebDriverFactoryInternal.java:58)
+	at ru.stqa.selenium.factory.SingletonStorage.createNewDriver(SingletonStorage.java:73)
+	at ru.stqa.selenium.factory.SingletonStorage.getDriver(SingletonStorage.java:31)
+	at ru.stqa.selenium.factory.WebDriverFactoryInternal.getDriver(WebDriverFactoryInternal.java:49)
+	at ru.stqa.selenium.factory.WebDriverFactory.getDriver(WebDriverFactory.java:39)
+	at com.ubs.fatca.JUnitTestBase$2.before(JUnitTestBase.java:39)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+h changes to installed add-ons
+1427443978340	addons.xpi-utils	DEBUG	Updating add-on states
+1427443978340	addons.xpi-utils	DEBUG	Writing add-ons list
+1427443978344	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1427443978345	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1427443978346	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1427443978347	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1427443978875	DeferredSave.extensions.json	DEBUG	Starting timer
+1427443978913	DeferredSave.extensions.json	DEBUG	Starting write
+1427443978922	addons.manager	DEBUG	shutdown
+1427443978923	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1427443978923	addons.xpi	DEBUG	shutdown
+1427443978923	addons.xpi-utils	DEBUG	shutdown
+1427443978924	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1427443978924	addons.manager	DEBUG	Calling shutdown blocker for OpenH264Provider
+1427443978925	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1427443979285	DeferredSave.extensions.json	DEBUG	Write succeeded
+1427443979285	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1427443979285	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1427443979289	addons.manager	DEBUG	Async provider shutdown done
+1427443979801	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1427443979804	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1427443979808	addons.xpi	DEBUG	startup
+1427443979808	addons.xpi	INFO	Mapping fxdriver@googlecode.com to /var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com
+1427443979809	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: /var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/webdriver-staging
+1427443979809	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to /Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427443979810	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1427443979810	addons.xpi	DEBUG	checkForChanges
+1427443979811	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.41.0&quot;,&quot;st&quot;:1427443977000,&quot;mt&quot;:1427443977000}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426914971000,&quot;mt&quot;:1426912941000}}}
+1427443979812	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1427443979813	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/var/folders/h1/vfrgyvc529v_s4wrzxfl40780000gn/T/anonymous5062386763198450726webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.41.0&quot;,&quot;st&quot;:1427443977000,&quot;mt&quot;:1427443977000}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;36.0.4&quot;,&quot;st&quot;:1426914971000,&quot;mt&quot;:1426912941000}}}
+1427443979814	addons.xpi	DEBUG	No changes found
+1427443979818	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1427443979819	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1427443979821	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1427443979821	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1427443980955	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 57 more
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot; junit=&quot;true&quot;&gt;
+  &lt;test name=&quot;Surefire test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ubs.fatca.JUnitTestSuite&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testHomePageHasAHeader')
+data.setCell(0, 2, 'com.ubs.fatca.SampleJUnitTest')
+data.setCell(0, 3, 47432);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ubs.fatca.SampleJUnitTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testHomePageHasAHeader</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
